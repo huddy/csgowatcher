@@ -49,7 +49,7 @@ class CSGOWatcher
           msg = "WIN: #{item['name']} is currently available for #{value}! #{percentage} lower than your budget."
           self.send_push_message(item['notify'],msg,'quick! get it!')
         else
-          msg = "CRAP: #{item['name']} is currently not available for cheaper"
+          msg = "CRAP: #{item['name']} is currently not currently cheap at #{value}"
         end
 
       else

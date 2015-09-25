@@ -1,0 +1,32 @@
+---
+base_url: http://steamcommunity.com/market/priceoverview/?appid=730&currency=2&market_hash_name=
+
+pushover:
+ - name: billy
+   user_key: insert-key-here
+   app_key: insert-key-here
+
+items:
+ - name: 'M4A4 | Howl (Well-Worn)'
+   minimum_price: 100.00
+   notify: billy
+
+ - name: '★ StatTrak™ M9 Bayonet | Night (Well-Worn)'
+   minimum_price: 100.00
+   notify: billy
+
+ - name: 'StatTrak™ M4A4 | Griffin (Well-Worn)'
+   minimum_price: 1.00
+   notify: billy
+
+ - name: 'StatTrak™ AWP | Hyper Beast (Factory New)'
+   minimum_price: 50.00
+   notify: billy
+
+ - name: '★ StatTrak™ Huntsman Knife | Blue Steel (Factory New)'
+   minimum_price: 100.00
+   notify: billy
+ 
+ - name: 'StatTrak™ AK-47 | Vulcan'
+   minimum_price: 100.00
+   notify: billy
