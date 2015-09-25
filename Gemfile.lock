@@ -1,0 +1,25 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bini (0.7.0)
+      sys-proctable
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
+    multi_json (1.11.2)
+    multi_xml (0.5.5)
+    pushover (1.0.4)
+      bini (= 0.7.0)
+      httparty (= 0.11.0)
+      yajl-ruby (= 1.1.0)
+    sys-proctable (0.9.8)
+    yajl-ruby (1.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  pushover
+
+BUNDLED WITH
+   1.10.6
