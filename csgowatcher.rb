@@ -13,7 +13,6 @@ class CSGOWatcher
     
     url = "#{@@config['base_url']}#{name}"
     url = URI::encode(url)
-    puts url
     open(url) do |f|
       response = f.read
       response = JSON.parse(response)
@@ -50,7 +49,7 @@ class CSGOWatcher
           msg = "WIN: #{item['name']} is currently available for #{value}! #{percentage} lower than your budget."
           self.send_push_message(item['notify'],msg,'quick! get it!')
         else
-          msg = "CRAP: #{item['name']} is currently not currently cheap at #{value}, your minimum is #{item['minimum_price']}"
+          msg = "LOSE: #{item['name']} is currently not below your minimum at #{value}, your minimum is #{item['minimum_price']}"
         end
 
       else
